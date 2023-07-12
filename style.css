@@ -70,11 +70,33 @@ body{
 
 /*Header Nav*/
 
-.Header__Nav{
+/* .Header__nav--OutToggle{
+    display: none;
+} */
+
+.Header__Nav--Toggle{
+
+}
+
+/* .Header__Nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: var(--Family);
+
+} */
+
+.Header__Nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* .Header__nav--OutToggle{
+    display: none;
+} */
+
+.Header__Nav--Toggle{
+    transform: translateX();
 }
 
 .Header__Nav--Logo{
@@ -86,9 +108,14 @@ body{
     display: none;
 }
 
-.Header_Nav--ToggleMenu>img{
+.Header_Nav--ToggleMenu>#Check{
+    display: none;
+}
+.Header_Nav--ToggleMenu>label>img{
     filter: invert(1);
 }
+
+
 
 /*Header Paragraph*/
 
