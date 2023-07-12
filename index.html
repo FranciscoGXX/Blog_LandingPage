@@ -1,21 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | [Blogr]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
+  <!-- <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  </style> -->
 </head>
+
 <body>
-  Product
+
+  <div class="mainContent">
+
+    <header class="HeaderContent">
+      <nav class="Header__Nav">
+        <div class="Header__Nav--Logo">
+          <p>Blogr</p>
+        </div>
+
+        <div class="Header__Nav--Sections">
+          <a href="#">Product</a>
+          <a href="#">Company</a>
+          <a href="#">Connect</a>
+        </div>
+
+        <div class="Header__Nav--User">
+          <button>
+            <a href="#">Login</a>
+          </button>
+
+          <button>
+            <a href="#">Sign Up</a>
+          </button>
+        </div>
+
+        <div class="Header_Nav--ToggleMenu">
+          <img src="./assets/Menu.svg">
+        </div>
+      </nav>
+
+      <div class="Header__Paragraph">
+        <div class="Header__Paragraph--Title"><p>A modern publishing platform</p></div>
+        <div class="Header__Paragraph--SubTitle"><p>Grow your audience and build your online brand</p></div>
+      </div>
+
+      <div class="Header__Buttons">
+        <button class="Header__Buttons--button ButtonFree">
+          <a href="#">Start for Free</a>
+        </button>
+        <button class="Header__Buttons--button ButtonLearn">
+          <a href="#">Learn More</a>
+        </button>
+      </div>
+    </header>
+
+    <Section class="ApplicationContent">
+      <div class="Application__Title">
+        <p> Designed for the future</p>
+      </div>
+    </Section>
+
+    <Section class="InfrastructureContent">Infrastructure</Section>
+
+  </div>
+
+
+  <!-- Product
 
   Overview
   Pricing
@@ -94,6 +156,7 @@
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
 </body>
+
 </html>

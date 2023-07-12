@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    /*Primary colors*/
+    --Light_red: hsl(356, 100%, 66%);
+    --Very_light_red: hsl(355, 100%, 74%);
+    --Very_dark_blue:hsl(208, 49%, 24%);
+
+    /*Second Colors*/
+
+    --White: hsl(0, 0%, 100%);
+    --Grayish_blue: hsl(240, 2%, 79%);
+    --Very_dark_grayish_blue: hsl(207, 13%, 34%);
+    --Very_dark_black_blue: hsl(240, 10%, 16%);
+
+    /*Gradients*/
+
+    --Very_light_red: hsl(13, 100%, 72%);
+    --Light_red: hsl(353, 100%, 62%);
+
+    --Very_dark_gray_blue: hsl(237, 17%, 21%);
+    --Very_dark_desaturated_blue: hsl(237, 23%, 32%);
+
+    /*Fonts*/
+
+    --Family: 'Overpass', sans-serif;
+    --Ubuntu: 'Ubuntu', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+html{
+    color: #000;
+    font-size: 16px;
+    font-family: var(--Ubuntu);
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    min-width: 375px;
+}
+
+/**/
+
+.mainContent{
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    row-gap: 20px;
+}
+
+.HeaderContent{
+    background-color: var(--Light_red);
+    color: #FFF;
+    display: grid;
+    grid-template-rows: 8rem 1fr 8rem;
+    padding: .1rem 1rem;
+    row-gap: .6rem;
+    border-bottom-left-radius: 8rem;
+}
+
+/*Header Nav*/
+
+.Header__Nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--Family);
+}
+
+.Header__Nav--Logo{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.Header__Nav--Sections,.Header__Nav--User{
+    display: none;
+}
+
+.Header_Nav--ToggleMenu>img{
+    filter: invert(1);
+}
+
+/*Header Paragraph*/
+
+.Header__Paragraph{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    justify-content: center;
+    text-align: center;
+    row-gap: 10px;
+    align-items: center;
+    padding: .5rem;
+    font-family: var(--Ubuntu);
+}
+
+.Header__Paragraph--Title{
+    /* font-size: 2.3rem; */
+    font-size: 2.3rem;
+}
+
+.Header__Paragraph--SubTitle{
+    font-size: 1.2rem;
+    font-weight: 300;
+    font-family: var(--Family);
+    padding: 1rem;
+}
+
+/*Header Buttons*/
+
+.Header__Buttons{
+    display: flex;
+    justify-content: center;
+    column-gap: 1.3rem;
+}
+
+.Header__Buttons--button{
+    height: 40px;
+    padding: .8rem;
+    outline: none;
+    border: none;
+    color: var(--Light_red);
+    font-family: var(--Ubuntu);
+    font-weight: 700;
+    border-radius: 1.3rem;
+}
+
+.ButtonLearn{
+    background-color: transparent;
+    outline: 1px solid  var(--Grayish_blue);
+    color: var(--White);
+}
+
+
+
+
+
