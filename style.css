@@ -46,6 +46,18 @@ a{
     color: inherit;
 }
 
+button{
+   border: none;
+   outline: 1px solid var(--White);
+   padding: .8rem 2.4rem;
+   border-radius: 1.2rem;
+   background-color: transparent;
+   color: var(--White);
+   font-family: var(--Ubuntu);
+   font-weight: 700;
+   font-size: .8rem;
+}
+
 body{
     min-width: 375px;
 }
@@ -58,62 +70,100 @@ body{
     row-gap: 20px;
 }
 
+/*Header main Content*/
 .HeaderContent{
     background-color: var(--Light_red);
     color: #FFF;
     display: grid;
-    grid-template-rows: 8rem 1fr 8rem;
-    padding: .1rem 1rem;
+    grid-template-rows: 8rem 1fr 8rem; /*8rem 1fr 8rem*/
+    /* padding: .1rem 1rem; */
     row-gap: .6rem;
+    /* padding: 1rem; */
     border-bottom-left-radius: 8rem;
 }
 
 /*Header Nav*/
 
-/* .Header__nav--OutToggle{
-    display: none;
-} */
-
-.Header__Nav--Toggle{
-
+.Header__Nav{
+    display: grid;
+    grid-template-rows: 3rem 27rem; /*3rem 27rem*/
+    position: relative;
+    z-index: 99;
 }
 
-/* .Header__Nav{
+.Header__Nav--Top{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: var(--Family);
-
-} */
-
-.Header__Nav{
-    display: flex;
-    justify-content: space-between;
 }
 
-/* .Header__nav--OutToggle{
-    display: none;
-} */
-
-.Header__Nav--Toggle{
-    transform: translateX();
+.Header__Nav--Top>p{
+    font-size: 2rem;
+    font-family: var(--Ubuntu);
 }
 
-.Header__Nav--Logo{
-    font-weight: bold;
-    font-size: 1.8rem;
-}
-
-.Header__Nav--Sections,.Header__Nav--User{
+#Check{
     display: none;
 }
 
-.Header_Nav--ToggleMenu>#Check{
-    display: none;
-}
-.Header_Nav--ToggleMenu>label>img{
+.Header__Nav--Top>label>img{
+    height: 2rem;
     filter: invert(1);
 }
+
+/*Header Nav Body*/
+
+.Header__Nav--Body{
+    background-color: var(--Very_light_red);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.3rem 0;
+    transform: translateY(-200%);
+    opacity: 0;
+    transition: all .7s ease-out;
+    border-bottom-left-radius: 8rem;
+}
+
+/*Class for show the toggle menu*/
+
+.Header__Nav__Body--Toggle{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.Header__Nav__Body--Toggle>a{
+    transform: scale(1) !important;
+}
+
+.Header__Nav--Body>a{
+    border-bottom: 3px solid var(--Light_red);
+    font-size: 1.1rem;
+    padding-bottom: .2rem;
+    transform: translateY(0);
+    transform: scale(0);
+    transition: all 1s;
+    
+}
+
+.Header__Nav--Body>a:hover{
+    transform: translateY(.5rem);
+}
+
+
+
+.Header__Nav__Body--Actions{
+        display: flex;
+        column-gap: 10px;
+    }
+
+.Header__Nav__Body--Actions>button:nth-child(2){
+        background-color: var(--White);
+        color: var(--Light_red);
+    }
+
+
 
 
 
@@ -126,7 +176,7 @@ body{
     text-align: center;
     row-gap: 10px;
     align-items: center;
-    padding: .5rem;
+    padding: .4rem;
     font-family: var(--Ubuntu);
 }
 
@@ -152,19 +202,18 @@ body{
 
 .Header__Buttons--button{
     height: 40px;
-    padding: .8rem;
+    /* padding: .8rem;
     outline: none;
-    border: none;
-    color: var(--Light_red);
-    font-family: var(--Ubuntu);
+    border: none; */
+    /* color: var(--Light_red); */
+    /* font-family: var(--Ubuntu);
     font-weight: 700;
-    border-radius: 1.3rem;
+    border-radius: 1.3rem; */
 }
 
-.ButtonLearn{
-    background-color: transparent;
-    outline: 1px solid  var(--Grayish_blue);
-    color: var(--White);
+.ButtonFree{
+    background-color: var(--White);
+    color: var(--Light_red);
 }
 
 
